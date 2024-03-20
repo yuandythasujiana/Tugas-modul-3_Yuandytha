@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Attribute Selector dengan Desain Menarik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            background-color: #fff;
+            border: 2px solid #007bff;
+            border-radius: 4px;
+            padding: 10px 15px;
+            font-size: 16px;
+            transition: border-color .3s, box-shadow .3s;
+            margin-bottom: 20px;
+            width: 300px; /* Fixed width */
+        }
+
+        input[type="text"]:focus {
+            border-color: #0056b3;
+            box-shadow: 0 0 8px rgba(0,123,255,.5);
+            outline: none;
+        }
+
+        input[type="button"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color .3s, transform .2s;
+            width: 150px; /* Fixed width */
+        }
+
+        input[type="button"]:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        /* Attribute Selector with Specific Value */
+        a[href$=".com"] {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color .3s;
+        }
+
+        a[href$=".com"]:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Masukkan teks di sini">
+    <input type="button" value="Submit">
+    
+    <p>Link ke laman eksternal:</p>
+    <a href="http://www.example.com">Example.com</a>
+</body>
+</html>

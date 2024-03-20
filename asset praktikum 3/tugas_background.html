@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Variasi</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .background-color {
+            background: linear-gradient(to right, rgb(101, 89, 89), rgb(146, 138, 138));
+            padding: 6px;
+            color: rgb(36, 35, 35);
+            text-align: center;
+        } 
+
+        .background-image {
+            background: url('assets/v.jpg') no-repeat center center;
+            background-size: cover; /* Membuat gambar mencakup seluruh kontainer tanpa dipotong */
+            background-position: center;
+            height: 100vh; /* Tinggi kontainer disesuaikan dengan tinggi viewport */
+            margin: auto; /* Untuk memusatkan kontainer jika perlu */
+            text-align: center; /* Membuat tulisan berada di tengah */
+            color: rgb(43, 42, 42);
+            display: flex; /* Menggunakan flexbox untuk mengatur posisi */
+            justify-content: center; /* Membuat konten berada di tengah horizontal */
+            align-items: center; /* Membuat konten berada di tengah vertikal */
+        }
+
+        /* Font untuk background gambar */
+        .background-image .content {
+            font-size: 19px;
+            font-weight: bold;
+            font-family: 'Times New Roman', serif;
+            text-align: center; /* Membuat tulisan berada di tengah */
+            margin-left: 200px; /* Menambahkan jarak dari kiri */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div class="content">Kim taehyung said:<br>"lupakan apapun yang menyakitimu <br> tapi jangan pernah lupakan yang di ajarkan kepadamu"</div>
+    </div>
+</body>
+</html>
